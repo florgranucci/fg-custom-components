@@ -14,6 +14,10 @@
     "chromatic"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/florgranucci/fg-custom-components"
+  },
   "files": [
     "dist/"
   ],
@@ -27,7 +31,7 @@
     "react-dom": "^18.2.0"
   },
   "engines": {
-    "node": ">= 14.0.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -38,7 +42,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_7f6acba02792ca5",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 \"src/**/*.{css,scss}\" dist/"
+    "copyfiles": "copyfiles -u 1 \"src/**/*.{css,scss}\" dist/",
+    "push:npm": "np"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -63,6 +68,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "np": "^9.2.0",
     "rimraf": "^5.0.5",
     "storybook": "^7.6.7",
     "typescript": "^5.2.2",
